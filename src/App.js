@@ -1,8 +1,8 @@
 import './App.css';
 import axios from 'axios';
 import React, { useState } from 'react';
-import Main from './components/main/Main';
 import './';
+import MainContainer from './containers/MainContainer';
 
 axios.defaults.xsrfCookieName = 'csrftoken';
 axios.defaults.xsrfHeaderName = 'X-CSRFToken';
@@ -47,7 +47,7 @@ const App = () => {
   };
   return (
     <>
-      <Main />
+      <MainContainer />
       {/* <button onClick={postLogin}>get token</button>
       <div>username : {username}</div>
       <div>password : {password}</div>
