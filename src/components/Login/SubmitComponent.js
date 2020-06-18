@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sign/SubmitComponent.scss';
+import '../Login/SubmitComponent.scss';
 
 const SubmitComponent = () => {
   return <div className='loginSubmit'>LOGIN</div>;
