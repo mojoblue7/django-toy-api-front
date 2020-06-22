@@ -1,4 +1,4 @@
-.loginContainer {
+.signupContainer {
   width: 100%;
   height: 100vh;
 
@@ -9,8 +9,7 @@
   padding: 15px;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
-
-.loginWrap {
+.signupWrap {
   width: 960px;
   background: #fff;
   border-radius: 10px;
@@ -22,26 +21,28 @@
 }
 
 @media (max-width: 992px) {
-  .loginWrap {
+  .signupWrap {
     width: 80%;
     padding: 100px 100px 130px 100px;
   }
 }
 
 @media (max-width: 768px) {
-  .loginWrap {
+  .signupWrap {
     width: 80%;
     padding: 100px 100px 130px 100px;
   }
 }
 
 @media (max-width: 576px) {
-  .loginWrap {
+  .signupWrap {
     width: 80%;
     padding: 100px 40px 130px 40px;
   }
 }
 
 a {
-  margin-top: -15px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
 }
