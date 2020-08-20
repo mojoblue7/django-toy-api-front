@@ -1,10 +1,9 @@
 import './App.css';
 import axios from 'axios';
 import React, { useState } from 'react';
-import './';
-import MainContainer from './containers/MainContainer';
+import MainContainer from './containers/main/MainContainer';
 import { Route } from 'react-router-dom';
-import SignupContainer from './containers/SignupContainer';
+import SignupPage from './pages/SignupPage';
 
 axios.defaults.xsrfCookieName = 'csrftoken';
 axios.defaults.xsrfHeaderName = 'X-CSRFToken';
@@ -36,8 +35,9 @@ const App = () => {
   };
   return (
     <>
-      <Route path='/' component={MainContainer} exact={true} />
-      <Route path='/signup' component={SignupContainer} exact={true} />
+      {/* <Route path='/' component={MainContainer} exact={true} /> */}
+      <Route path='/signup' component={SignupPage} exact={true} />
+
       {/* <Route path="/signup" component={}/> */}
       {/* <button onClick={postLogin}>get token</button>
       <div>username : {username}</div>

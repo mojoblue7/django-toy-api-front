@@ -1,5 +1,5 @@
 import React from 'react';
-import '../common/SubmitComponent.scss';
+import './SubmitComponent.scss';
 
 const SubmitComponent = ({ text, onClick }) => {
   return (

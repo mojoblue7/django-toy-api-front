@@ -4,7 +4,7 @@ import './InputComponent.scss';
 const InputComponent = ({ name, placeholder }) => {
   return (
     <div className='inputContainer'>
-      {name === 'password' ? (
+      {name === 'password' || name === 'passwordCheck' ? (
         <input
           className='input100'
           type='password'

@@ -1,7 +1,7 @@
 import React from 'react';
 import './InputComponent.scss';
 
-const InputComponent = ({ name, placeholder }) => {
+const InputComponent = ({ name, placeholder, handleChange, style }) => {
   return (
     <div className='inputContainer'>
       {name === 'password' ? (
@@ -10,6 +10,8 @@ const InputComponent = ({ name, placeholder }) => {
           type='password'
           name={name}
           placeholder={placeholder}
+          onChange={handleChange}
+          style={style}
         />
       ) : (
         <input
@@ -17,6 +19,8 @@ const InputComponent = ({ name, placeholder }) => {
           type='text'
           name={name}
           placeholder={placeholder}
+          onChange={handleChange}
+          style={style}
         />
       )}
       <span className='symbolInput'>
